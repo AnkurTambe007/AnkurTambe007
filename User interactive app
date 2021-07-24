@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:text="Team 1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:textColor="#000"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:id="@+id/a"
+				android:text="0"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="50sp"/>
+
+			<Button
+				android:id="@+id/a3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+3"
+				android:background="#FF9800"
+				android:layout_margin="16dp"
+				android:onClick="add3"/>
+
+			<Button
+				android:id="@+id/a2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+2"
+				android:background="#FF9800"
+				android:layout_margin="16dp"
+				android:onClick="add2"/>
+
+			<Button
+				android:id="@+id/a1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Free throw"
+				android:background="#FF9800"
+				android:layout_margin="16dp"
+				android:onClick="add1"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="-1"
+				android:onClick="an"
+				android:background="#FF9800"
+				android:layout_margin="16dp"/>
+
+		</LinearLayout>
+		
+		<View
+			android:layout_width="2dp"
+			android:layout_height="match_parent"
+			android:background="@android:color/darker_gray"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:text="Team 2"
+				android:textColor="#000"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:id="@+id/b"
+				android:text="0"
+				android:fontStyle="italic"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="50sp"/>
+
+			<Button
+				android:id="@+id/b3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+3"
+				android:background="#FF9800"
+				android:layout_margin="16dp"
+				android:onClick="add3b"/>
+
+			<Button
+				android:id="@+id/b2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+2"
+				android:background="#FF9800"
+				android:layout_margin="16dp"
+				android:onClick="add2b"/>
+
+			<Button
+				android:id="@+id/b1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Free throw"
+				android:background="#FF9800"
+				android:layout_margin="16dp"
+				android:onClick="add1b"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="-1"
+				android:onClick="bn"
+				android:background="#FF9800"
+				android:layout_margin="16dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Reset"
+		android:layout_margin="6dp"
+		android:onClick="reset"
+		android:id="@+id/r"
+		android:background="#FF9800"/>
+	
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/b"
+		android:layout_weight="1"
+		android:scaleType="center"
+		android:layout_margin="6dp"/>
+        
+</LinearLayout>
